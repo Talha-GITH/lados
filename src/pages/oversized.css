@@ -1,0 +1,80 @@
+/* Default styles */
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.tshirt-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.tshirt {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.product-image {
+  max-width: 100%; /* Set maximum width to 100% */
+  height: auto;
+}
+
+.product-text {
+  padding: 5px;
+  text-align: center; /* Center text */
+  max-width: 100%; /* Set maximum width */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+.cart {
+  margin-top: 40px;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 10px;
+}
+
+/* Styles for devices with a maximum width of 768px (e.g., tablets and smaller screens) */
+@media (max-width: 768px) {
+  .tshirt-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid columns for smaller screens */
+  }
+}

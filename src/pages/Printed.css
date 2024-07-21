@@ -1,0 +1,43 @@
+/* Printed.css */
+
+/* Base styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); /* Automatically adjust columns */
+    gap: 10px; /* Gap between squares */
+  }
+  
+  .square {
+    background-color: #f0f0f0; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px; /* Set a minimum height for squares */
+    margin-block-start: 50px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-image {
+    width: 100%; /* Adjust image size */
+    height: auto; /* Adjust image size */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    /* Adjust for medium screens (tablets) */
+    .container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Adjust for large screens (desktops) */
+    .container {
+      grid-template-columns: repeat(4, 1fr); /* Four columns */
+    }
+  }
+  
